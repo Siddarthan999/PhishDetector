@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detection</title>
+    <style>
+        .button {
+        display: inline-block;
+        padding: 10px 10px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    body {
+        background: repeating-linear-gradient(0deg, #ad1be7 0, #ad1be7 20%, transparent 0, transparent 50%),repeating-linear-gradient(45deg, #05010a 0, #05010a 10%, transparent 0, transparent 50%);
+        background-size: 2em 2em;
+        background-color: #ad1be7;
+        opacity: 1
+    }
+    .color {
+        color:white;
+        text-align:center
+    }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+<body class="color">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 class="animate__animated animate__flash">Phishing URL Detection</h1>
+    <form method="post" action="/predict">
+        <label for="url">Enter a URL:</label>
+        <input type="text" id="url" name="url" required minlength="5">
+        <input type="submit" class="button" value="Check">
+    </form>
+</body>
+</html>
